@@ -198,13 +198,13 @@ class Manager extends Employee {
 
 
 
-//    old.Person p1 = new old.Person("Huseyn", "Rustemli", 15);
-//    old.Person p2 = new old.Person("Ilkin", "Eyyubov", 21);
-//    old.Person p3 = new old.Person("Aynura", "Sirinova", 25);
-//    old.Person p4 = new old.Person("Elminaz", "Mirelizade", 29);
+//    old.Car p1 = new old.Car("Huseyn", "Rustemli", 15);
+//    old.Car p2 = new old.Car("Ilkin", "Eyyubov", 21);
+//    old.Car p3 = new old.Car("Aynura", "Sirinova", 25);
+//    old.Car p4 = new old.Car("Elminaz", "Mirelizade", 29);
 //
-//    old.Person[] personList = {p1, p2, p3, p4};
-//    for (old.Person person : personList) {
+//    old.Car[] personList = {p1, p2, p3, p4};
+//    for (old.Car person : personList) {
 //      if (person.age > 18) {
 //        System.out.println(person);
 //      }

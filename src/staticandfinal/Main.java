@@ -3,11 +3,11 @@ package staticandfinal;
 public class Main {
   public static void main(String[] args) {
 
-//    Person p1 = new Person("Ilkin","Eyyubov",21,3500.0);
-//    Person p2 = new Person("Nurlan","Rahmanov",26,3590.00);
-//    Person p3 = new Person("Murat","Shahbasov",25,4000.00);
+//    Car p1 = new Car("Ilkin","Eyyubov",21,3500.0);
+//    Car p2 = new Car("Nurlan","Rahmanov",26,3590.00);
+//    Car p3 = new Car("Murat","Shahbasov",25,4000.00);
 //
-//    Person.getTotalSalaryAndAvg();
+//    Car.getTotalSalaryAndAvg();
 
     int[] arr = {1, 5, 23, 5, 6, 78, 3, 12, 4, 5, 7};
     int target = 15;

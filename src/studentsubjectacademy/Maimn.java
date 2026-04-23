@@ -68,6 +68,11 @@ public class Maimn {
                                     })
                     })
     };
+    try {
+      System.out.println(10 / 2);
+    } finally {
+      System.out.println("process bitti");
+    }
 
 //    for (Academy academy : academies) {
 //      System.out.println(academy.getName());
@@ -84,60 +89,62 @@ public class Maimn {
 //        System.out.println(academy.getName());
 //      }
 //    }
-//    for (Academy academy : academies) {
-//      String name = "";
-//      int count = 0;
-//      Subject[] fens = new Subject[sum];
-//
-//      for (Student student : academy.getStudents()) {
-//        for (Subject sub : student.getSubjects()) {
-//          if (sub.getGrade() < 50) {
-//            name = student.getName();
-//            if (sub.getName() == null) {
-//              continue;
-//            }
-//            fens[count] = new Subject(sub.getName(), sub.getGrade(), sub.totalHour);
-//            count++;
-////            System.out.println(student.getName());
-////            System.out.println(" kesildiniz fen, " + sub.getName() + " " + sub.getGrade());
-//          }
-//        }
-//      }
-//      if (count > 0) {
-//        for (Subject fen : fens) {
-//
-//          if (fen != null && fen.getName() != null) {
-//            System.out.printf("%s kesildiyiniz fenler\n", name);
-//            System.out.println(fen.getName() + " " + fen.getGrade() + " " + fen.getTotalHour());
-//          }
-//        }
-//      }
-//    }
+
 
     for (Academy academy : academies) {
+
       for (Student student : academy.getStudents()) {
-
-        Subject[] failed = new Subject[student.getSubjects().length];
+        String name = "";
         int count = 0;
-
+        Subject[] fens = new Subject[student.getSubjects().length];
         for (Subject sub : student.getSubjects()) {
           if (sub.getGrade() < 50) {
-            failed[count] = sub;
+            name = student.getName();
+            fens[count] = new Subject(sub.getName(), sub.getGrade(), sub.totalHour);
             count++;
+//            System.out.println(student.getName());
+//            System.out.println(" kesildiniz fen, " + sub.getName() + " " + sub.getGrade());
           }
         }
 
         if (count > 0) {
-          System.out.printf("%s kesildiyiniz fenler\n", student.getName());
-
-          for (int i = 0; i < count; i++) {
-            Subject f = failed[i];
-            System.out.println(f.getName() + " " + f.getGrade() + " " + f.getTotalHour());
+          System.out.println(academy.getName());
+          System.out.printf("%s kesildiyiniz fenler\n", name);
+          for (Subject fen : fens) {
+            if (fen != null && fen.getName() != null) {
+              System.out.println(fen.getName() + " " + fen.getGrade() + " " + fen.getTotalHour());
+            }
           }
         }
       }
+
     }
 
+
+//    for (Academy academy : academies) {
+//      for (Student student : academy.getStudents()) {
+//
+//        Subject[] failed = new Subject[student.getSubjects().length];
+//        int count = 0;
+//
+//        for (Subject sub : student.getSubjects()) {
+//          if (sub.getGrade() < 50) {
+//            failed[count] = sub;
+//            count++;
+//          }
+//        }
+//
+//        if (count > 0) {
+//          System.out.printf("%s kesildiyiniz fenler\n", student.getName());
+//
+//          for (int i = 0; i < count; i++) {
+//            Subject f = failed[i];
+//            System.out.println(f.getName() + " " + f.getGrade() + " " + f.getTotalHour());
+//          }
+//        }
+//      }
+//    }
+//
 
 
   }

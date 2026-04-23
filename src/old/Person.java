@@ -14,7 +14,7 @@ public class Person {
 
   @Override
   public String toString() {
-    return "old.Person{" +
+    return "old.Car{" +
             "name='" + name + '\'' +
             ", surname='" + surname + '\'' +
             ", age=" + age +
