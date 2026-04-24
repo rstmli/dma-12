@@ -8,12 +8,24 @@ public enum Color {
   BLUE("blue"),
   WHITE("white");
 
-  private String value;
+  private final String value;
   Color(String value){
     this.value = value;
   }
+
+
   public String getValue(){
     return value;
   }
 
 }
+
+
+/*
+weekly enum yaradaq
+icerisinde MONDAY("Bazar ertesi"),THOSDAY vs.
+switch case ile yoxlayiriq
+int deyer = sc.nextInt();
+1
+sout("bugun bazarertesidir");
+ */

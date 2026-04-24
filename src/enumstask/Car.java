@@ -20,3 +20,16 @@ public class Car {
     this.color = color;
   }
 }
+
+
+/*
+  bank app
+  bank class
+  cardHolder;
+  cardNumber;
+  balance;
+
+  methodlar
+  bir user diger usere pul transferi edir
+  yoxlanis kifayet qeder balans varmi yoxdursa exception
+ */
