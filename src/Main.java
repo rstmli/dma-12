@@ -7,14 +7,76 @@ public class Main {
     /*
     soz polindromdur yoxsa yox
      */
-  List<StringBuilder> list1 = List.of(new StringBuilder("Pakize"),new StringBuilder("alma"),new StringBuilder("ata"),new StringBuilder("level"),new StringBuilder("madam"));
-  for(StringBuilder s : list1){
-    if(s.toString().contentEquals(s.reverse())){
-      System.out.println("eded polindromdur: " + s);
-    }else {
-      System.out.println("eded polindrom deyil: " + s);
-    }
-  }
+//  List<StringBuilder> list1 = List.of(new StringBuilder("Pakize"),new StringBuilder("alma"),new StringBuilder("ata"),new StringBuilder("level"),new StringBuilder("madam"));
+//  for(StringBuilder s : list1){
+//    if(s.toString().contentEquals(s.reverse())){
+//      System.out.println("eded polindromdur: " + s);
+//    }else {
+//      System.out.println("eded polindrom deyil: " + s);
+//    }
+//  }
+//    Scanner sc = new Scanner(System.in);
+//    int deyer = sc.nextInt();
+//
+//    List<Integer> array = new ArrayList<>();
+//    array.add(deyer + 1);
+//    array.add(deyer);
+//    array.add(deyer - 1);
+//    int sum = 0;
+//    for (Integer integer : array) {
+//      sum +=integer;
+//    }
+//    System.out.println(sum);
+
+
+//
+//
+//
+//    Scanner sc = new Scanner(System.in);
+//  int k = sc.nextInt();
+//  List<Integer> array = new ArrayList<>();
+//  array.add(1);
+//  array.add(2);
+//  array.add(3);
+//  array.add(4);
+//  array.add(5);
+//
+//  int sum = 0;
+//  for(int i = 0;i<k;i++){
+//    sum+=array.get(i);
+//  }
+//    System.out.println(sum);
+//
+//  for(int i = k;i<array.size();i++){
+//    sum+= array.get(i);
+//    sum-=array.get(i-k);
+//    System.out.println(sum);
+//  }
+
+//  List<Integer> array = new ArrayList<>();
+//  array.add(1);
+//  array.add(2);
+//  array.add(3);
+//  array.add(4);
+//  array.add(5);
+//
+//  Scanner sc = new Scanner(System.in);
+//  int deyer = sc.nextInt();
+//  if(deyer > array.size()) System.out.println("arrayin olcusunu kecdiniz");
+//  for(int i = 0;i<array.size() - (deyer - 1);i++){
+//    int count = 0;
+//    for(int j = i;j<i + deyer;j++){
+//      count+=array.get(j);
+//    }
+//    System.out.println(count);
+//  }
+
+  /*
+  arrayimiz icerisinde integer ededler
+  daha sonra istifadeciden eded aliriq misal ucun 3
+  her elementi ozunden sonraki 2 element ile toplayiriq
+  List 1,2,3,4,5 netice 6,9,12
+   */
 
 
 
@@ -34,9 +96,7 @@ public class Main {
 
 
 
-
-/* listin icindeki en cox tekrarlanan soz*/
-
+    /* listin icindeki en cox tekrarlanan soz*/
 
 
 //
@@ -77,7 +137,6 @@ public class Main {
 //    System.out.println(dovrSayi);
 
 
-
 //    String text1 = "Bu gün hava çox gözəldir, parkda gəzmək əla olar. Quşlar oxuyur və " +
 //            "günəş parlayır.";
 //    String text2 = "Bu gün hava bir az sərin olsa da, günəş buludların arasından süzülür." +
@@ -111,14 +170,8 @@ public class Main {
 */
 
 
-
-
-
-
 //    int[] arr = {1, 2, 3, 4, 5, 6, 7, 10, 8, 12, 30, 15, 20};
 //    int max = arr[0];
-
-
 
 
 //    for (int i = 0; i < arr.length; i++) {
@@ -139,5 +192,61 @@ public class Main {
 //      }
 //    }
 //    System.out.println(max);
+
+//    String adad1 = "5";
+//    String adad2 = "10";
+//    System.out.println(adad1+adad2);
+//    adad1 = adad2;
+//    adad2 = adad1;
+//    System.out.println(adad1);
+//    System.out.println(adad2);
+//    int a1 = Integer.parseInt(adad1);
+//    int b1 = Integer.parseInt(adad2);
+//    int c = a1+b1;
+//    System.out.println(c);
+//    String s = "Java";
+//    String s2 = "Java";
+//    System.out.println(s.equals(s2));
+
+//    String a = "Salam"; // 35125414
+//    a = "Java"; // 5125212`145214  = a
+//    System.out.println(a);
+
+
+    HashSet<String> s1 = new HashSet<>();
+    s1.add(null);
+    System.out.println(s1);
+    try {
+      System.out.println(5/2);
+      System.exit(0);
+    }catch (ArithmeticException e ){
+      System.out.println(e);
+      System.exit(0);
+    } finally {
+      System.out.println("Isledim :)");
+    }
+
+
+//
+//    List<Integer> adsadsad = new ArrayList<>(List.of(12000, 45, 23, 456, 2000, 3000, 3, 87, 9, 2));
+//    Collections.sort(adsadsad);
+//    System.out.println("max:" + adsadsad.get(adsadsad.size()-1) +
+//            " 2. max: " + adsadsad.get(adsadsad.size() -2));
+//    int max = 0;
+//    int secondMax = 0;
+//    for (Integer integer : adsadsad) {
+//      if (integer > max) {
+//        secondMax = max;
+//        max = integer;
+//      }
+//      else if (integer > secondMax && integer != max) {
+//        secondMax = integer;
+//      }
+//    }
+//    System.out.println(secondMax);
+//    System.out.println(max);
+
+
   }
+
 }
