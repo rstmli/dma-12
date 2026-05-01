@@ -212,19 +212,19 @@ public class Main {
 //    a = "Java"; // 5125212`145214  = a
 //    System.out.println(a);
 
-
-    HashSet<String> s1 = new HashSet<>();
-    s1.add(null);
-    System.out.println(s1);
-    try {
-      System.out.println(5/2);
-      System.exit(0);
-    }catch (ArithmeticException e ){
-      System.out.println(e);
-      System.exit(0);
-    } finally {
-      System.out.println("Isledim :)");
-    }
+//
+//    HashSet<String> s1 = new HashSet<>();
+//    s1.add(null);
+//    System.out.println(s1);
+//    try {
+//      System.out.println(5 / 2);
+//      System.exit(0);
+//    } catch (ArithmeticException e) {
+//      System.out.println(e);
+//      System.exit(0);
+//    } finally {
+//      System.out.println("Isledim :)");
+//    }
 
 
 //
@@ -247,6 +247,119 @@ public class Main {
 //    System.out.println(max);
 
 
+
+
+
+
+
+
+//    List<String> adlar = new ArrayList<>();
+//    adlar.add("Eli");
+//    adlar.add("Veli");
+//    adlar.add("Ayse");
+//
+//    for(String a : adlar){
+//      if("Veli".equals(a)){
+//       adlar.set(adlar.indexOf(a),"Veli Memmedov");
+//      }
+//    }
+
+
+
+    List<String> idS = new ArrayList<>();
+    idS.add("Ilkin");
+    idS.add("Elminaz");
+    idS.add("Seadet");
+    idS.add("Murat");
+    idS.add("Nurlan");
+    idS.add("Pakize");
+    idS.add("Pakize");
+    idS.add("Pakize");
+    idS.add("Pakize");
+    idS.add("Baris");
+    idS.add("Nicat");
+    idS.add("Ilkin");
+    idS.add("Ilkin");
+    idS.add("Ilkin");
+    idS.add("Ilkin");
+    idS.add("Aynure");
+    idS.add("Aynure");
+    idS.add("Aynure");
+    idS.add("Aynure");
+    idS.add("Aynure");
+    idS.add("Aynure");
+    Set<String> uniqueSet = new HashSet<>();
+    Set<String> notUnique = new HashSet<>();
+    int dovrSayi = 0;
+    for(String num : idS){
+      int count = 0;
+      for(String soz : idS){
+        dovrSayi++;
+        if(num.equals(soz)) {
+          count++;
+          dovrSayi++;
+        }
+      else if (!uniqueSet.add(num) && count > 1){
+          dovrSayi++;
+          break;
+        }
+      }
+      if(count>= 5){
+        notUnique.add(num);
+      }
+    }
+    System.out.println("Dovr: " + dovrSayi);
+    System.out.println("daimi musteriler: " + notUnique);
+    uniqueSet.removeAll(notUnique);
+    System.out.println("bir defe gelenler: " + uniqueSet);
+
+    /*
+    Tapşırıq:
+
+Siyahıda neçə təkrar gələn (dublikat) ID olduğunu tap.
+
+Bütün dublikat ID-ləri bir Set daxilində topla.
+
+Orijinal siyahıdan bütün dublikatları təmizləyib, yalnız həqiqətən unikal (cəmi 1 dəfə gələn) müştəriləri saxla.
+
+Nümunə:
+Giriş: [1, 2, 3, 2, 4, 5, 1, 6]
+
+Təkrar olunanlar: [1, 2]
+
+Yalnız 1 dəfə gələnlər: [3, 4, 5, 6]
+     */
+
+
+
+//    for(int i = 0;i<adlar.size();i++){
+//      if("Veli".equals(adlar.get(i))){
+//        adlar.set(i,"Veli Memmedov");
+//      }
+//    }
+//    Collections.sort(adlar);
+//    System.out.println(adlar);
+
+
+
+    /*
+    1. "Səhvləri Düzəlt" (List Manipulation)
+      Ssenari: Bir tələbə adları siyahısı (ArrayList<String>) verilib: ["Eli", "Veli",
+      "Ayşe", "Eli", "Memmed", "Ayşe"].
+        Tapşırıq:
+        Siyahıda "Eli" adının olub-olmadığını yoxla.
+        "Veli" adını "Veli Memmedov" ilə əvəz et.
+        Siyahıdakı 2-ci elementi sil.
+        Sonda bütün adları əlifba sırası ilə düz və çap et.
+        Məqsəd: contains(), set(), remove() və Collections.sort() metodlarını mənimsəmək.
+     */
+
+
   }
 
 }
+
+
+
+
+
