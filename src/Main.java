@@ -265,53 +265,52 @@ public class Main {
 //    }
 
 
-
-    List<String> idS = new ArrayList<>();
-    idS.add("Ilkin");
-    idS.add("Elminaz");
-    idS.add("Seadet");
-    idS.add("Murat");
-    idS.add("Nurlan");
-    idS.add("Pakize");
-    idS.add("Pakize");
-    idS.add("Pakize");
-    idS.add("Pakize");
-    idS.add("Baris");
-    idS.add("Nicat");
-    idS.add("Ilkin");
-    idS.add("Ilkin");
-    idS.add("Ilkin");
-    idS.add("Ilkin");
-    idS.add("Aynure");
-    idS.add("Aynure");
-    idS.add("Aynure");
-    idS.add("Aynure");
-    idS.add("Aynure");
-    idS.add("Aynure");
-    Set<String> uniqueSet = new HashSet<>();
-    Set<String> notUnique = new HashSet<>();
-    int dovrSayi = 0;
-    for(String num : idS){
-      int count = 0;
-      for(String soz : idS){
-        dovrSayi++;
-        if(num.equals(soz)) {
-          count++;
-          dovrSayi++;
-        }
-      else if (!uniqueSet.add(num) && count > 1){
-          dovrSayi++;
-          break;
-        }
-      }
-      if(count>= 5){
-        notUnique.add(num);
-      }
-    }
-    System.out.println("Dovr: " + dovrSayi);
-    System.out.println("daimi musteriler: " + notUnique);
-    uniqueSet.removeAll(notUnique);
-    System.out.println("bir defe gelenler: " + uniqueSet);
+//    List<String> idS = new ArrayList<>();
+//    idS.add("Ilkin");
+//    idS.add("Elminaz");
+//    idS.add("Seadet");
+//    idS.add("Murat");
+//    idS.add("Nurlan");
+//    idS.add("Pakize");
+//    idS.add("Pakize");
+//    idS.add("Pakize");
+//    idS.add("Pakize");
+//    idS.add("Baris");
+//    idS.add("Nicat");
+//    idS.add("Ilkin");
+//    idS.add("Ilkin");
+//    idS.add("Ilkin");
+//    idS.add("Ilkin");
+//    idS.add("Aynure");
+//    idS.add("Aynure");
+//    idS.add("Aynure");
+//    idS.add("Aynure");
+//    idS.add("Aynure");
+//    idS.add("Aynure");
+//    Set<String> uniqueSet = new HashSet<>();
+//    Set<String> notUnique = new HashSet<>();
+//    int dovrSayi = 0;
+//    for(String num : idS){
+//      int count = 0;
+//      for(String soz : idS){
+//        dovrSayi++;
+//        if(num.equals(soz)) {
+//          count++;
+//          dovrSayi++;
+//        }
+//      else if (!uniqueSet.add(num) && count > 1){
+//          dovrSayi++;
+//          break;
+//        }
+//      }
+//      if(count>= 5){
+//        notUnique.add(num);
+//      }
+//    }
+//    System.out.println("Dovr: " + dovrSayi);
+//    System.out.println("daimi musteriler: " + notUnique);
+//    uniqueSet.removeAll(notUnique);
+//    System.out.println("bir defe gelenler: " + uniqueSet);
 
     /*
     Tapşırıq:
@@ -329,6 +328,30 @@ Təkrar olunanlar: [1, 2]
 
 Yalnız 1 dəfə gələnlər: [3, 4, 5, 6]
      */
+
+
+
+    /*
+    Map key Integer  value String
+    sonra key chapa verin
+
+    task 2
+    key String        value Double
+    Telebe adlar      telebe bali
+    umumi telebelerin ballarinin ortalamasi
+    kesilen
+    max bal toplayan
+    firstMax ve secondMax
+
+
+    Map<String,List<Subject> telebe1 = Map.of("Elminaz",List.of(new Subject("fizika",90),new Subject("Kimya",90)));
+    Map<String,List<Subject>>
+    Subject class -> SubjectName,subjectGrade
+    chap example
+    telebenin adi ve fen ve fenden topladigi bal, fen kimya bal 50, fen match bal 60
+    Elminaz fen kimya bal 90, fen fizika bal 90
+     */
+
 
 
 
